@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    {
+      "name": "reaper",
+      "repo": "SpiceLabsHQ/reaper",
+      "description": "Ground control for your codebase",
+      "tags": ["workflow", "agents", "tdd", "quality"]
+    }
+  ]
+}
