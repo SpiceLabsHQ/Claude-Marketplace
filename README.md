@@ -6,21 +6,29 @@ We build opinionated tools for Claude Code. TDD-first, SOLID principles, quality
 
 > Built for us. Shared because why not.
 
-## Plugins
+## Quick Start
 
-| Plugin | Description | Install |
-|--------|-------------|---------|
-| [Reaper](plugins/reaper.md) | Ground control for your codebase | `claude plugin add SpiceLabsHQ/reaper` |
+### 1. Add the Marketplace
 
-## Installation
+```bash
+claude plugin marketplace add SpiceLabsHQ/claude-marketplace
+```
 
-Pick a plugin, run the command:
+This registers the Spice Labs plugin registry with Claude Code.
+
+### 2. Install a Plugin
 
 ```bash
 claude plugin add SpiceLabsHQ/<plugin-name>
 ```
 
 That's it. Claude handles the rest.
+
+## Plugins
+
+| Plugin | Description | Install |
+|--------|-------------|---------|
+| [Reaper](plugins/reaper.md) | Ground control for your codebase | `claude plugin add SpiceLabsHQ/reaper` |
 
 ## What Are Claude Code Plugins?
 
