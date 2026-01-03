@@ -10,25 +10,29 @@ This is the **Spice Labs Plugin Marketplace** - a curated registry for Claude Co
 
 ```
 claude-marketplace/
-├── plugins/           # Plugin documentation (.md files)
-├── registry.json      # Central plugin registry manifest
-└── README.md          # Project documentation
+├── .claude-plugin/
+│   └── marketplace.json  # Marketplace manifest (required by Claude Code)
+├── plugins/              # Plugin documentation (.md files)
+└── README.md             # Project documentation
 ```
 
 ## Key Files
 
-- **registry.json** - JSON manifest listing all plugins with metadata (name, repo, description, tags)
+- **.claude-plugin/marketplace.json** - Marketplace manifest listing all plugins with source locations
 - **plugins/*.md** - Detailed documentation for each plugin including commands, agents, and usage
 
 ## Working with This Repository
 
 ### Adding a New Plugin
 
-1. Add plugin metadata to `registry.json`:
+1. Add plugin entry to `.claude-plugin/marketplace.json`:
 ```json
 {
   "name": "plugin-name",
-  "repo": "SpiceLabsHQ/plugin-name",
+  "source": {
+    "source": "github",
+    "repo": "SpiceLabsHQ/plugin-name"
+  },
   "description": "Brief description",
   "tags": ["relevant", "tags"]
 }
@@ -39,7 +43,8 @@ claude-marketplace/
 ### Plugin Installation (for users)
 
 ```bash
-claude plugin add SpiceLabsHQ/<plugin-name>
+claude plugin marketplace add SpiceLabsHQ/claude-marketplace
+claude plugin install <plugin-name>@spice-labs
 ```
 
 ## Current Plugins

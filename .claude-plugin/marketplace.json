@@ -1,0 +1,20 @@
+{
+  "name": "spice-labs",
+  "owner": {
+    "name": "Spice Labs"
+  },
+  "metadata": {
+    "description": "Curated registry for high-quality Claude Code plugins"
+  },
+  "plugins": [
+    {
+      "name": "reaper",
+      "source": {
+        "source": "github",
+        "repo": "SpiceLabsHQ/reaper"
+      },
+      "description": "Ground control for your codebase",
+      "tags": ["workflow", "agents", "tdd", "quality"]
+    }
+  ]
+}

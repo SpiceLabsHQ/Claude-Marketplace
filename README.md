@@ -19,7 +19,7 @@ This registers the Spice Labs plugin registry with Claude Code.
 ### 2. Install a Plugin
 
 ```bash
-claude plugin add SpiceLabsHQ/<plugin-name>
+claude plugin install <plugin-name>@spice-labs
 ```
 
 That's it. Claude handles the rest.
@@ -28,7 +28,7 @@ That's it. Claude handles the rest.
 
 | Plugin | Description | Install |
 |--------|-------------|---------|
-| [Reaper](plugins/reaper.md) | Ground control for your codebase | `claude plugin add SpiceLabsHQ/reaper` |
+| [Reaper](plugins/reaper.md) | Ground control for your codebase | `claude plugin install reaper@spice-labs` |
 
 ## What Are Claude Code Plugins?
 
