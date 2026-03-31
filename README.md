@@ -29,6 +29,7 @@ That's it. Claude handles the rest.
 | Plugin | Description | Install |
 |--------|-------------|---------|
 | [Reaper](plugins/reaper.md) | Ground control for your codebase | `claude plugin install reaper@spice-labs` |
+| [PowerShell Pilot](plugins/powershell-pilot.md) | PowerShell automation with persistent sessions | `claude plugin install powershell-pilot@spice-labs` |
 
 ## What Are Claude Code Plugins?
 

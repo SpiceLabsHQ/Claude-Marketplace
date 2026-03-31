@@ -15,6 +15,15 @@
       },
       "description": "Ground control for your codebase",
       "tags": ["workflow", "agents", "tdd", "quality"]
+    },
+    {
+      "name": "powershell-pilot",
+      "source": {
+        "source": "github",
+        "repo": "SpiceLabsHQ/Claude-Powershell-Pilot"
+      },
+      "description": "PowerShell automation skills for Claude Code and Claude Desktop",
+      "tags": ["powershell", "automation", "azure", "microsoft-365", "shell"]
     }
   ]
 }
